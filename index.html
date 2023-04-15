@@ -13,12 +13,13 @@
     <li><a href="https://github.com/Brunofms16">Home</a> </li>
     <li><a href="https://github.com/Brunofms16?tab=repositories">Projetos</a> </li>
     <li><a href="@">Links</a> </li>
-    <li><a href="@">sobre</a> </li>
+   
+    
 
 </ul>
 
     </nav>
-    <div class="container">
+    <div class="container" id="container">
 <div id="calc">
     <h2>Calculadora de juros compostos</h2>
 
@@ -27,7 +28,7 @@
     <div class="field">
         <p>Valor inicial (Capital):</p>
 <label for="value"></label>
-<input type="number" name="" id="value">
+<input type="number" name="" id="value" >
     </div>
     <div class="field">
         <p>Taxa de juros a.m:</p>
@@ -37,7 +38,7 @@
     <div class="field">
         <p>tempo de <br> rendimento a.m:</p>
       <label for="time"></label>  
-      <input type="number" name="" id="time">
+      <input type="number" name="" id="time" >
     </div>
 
     <div class="result">
@@ -45,10 +46,13 @@
         <span id="total">0,00</span>
     </div>
 
-
+    <div id="data"></div>
     <button id="calculate" value="" >Calcular</button>
 
+
     <div id="inpboxs"> </div>
+    <span id="pdf">Gerar PDF</span>
+    
     
  
 </div>
@@ -62,11 +66,11 @@
 
     </div>
 
-    <div id="mores"></div>
-
+ 
   
 
     <script src="script.js"></script>
+      <script defer src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     
 </body>
